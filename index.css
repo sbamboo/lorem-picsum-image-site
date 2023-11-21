@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+#imageInfo {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+#reloadButton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#customSizeFields {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#customSizeFields input {
+    width: 45%;
+    box-sizing: border-box;
+}
+
+#infoContainer {
+    position: fixed;
+    bottom: 15px;
+    right: -220px;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    z-index: 2;
+    transition: right 0.3s ease;
+}
+
+#infoIcon {
+    background-color: black;
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+}
+
+#infoIcon svg {
+    fill: white;
+    width: 24px;
+    height: 24px;
+}
+
+#infoText {
+    background-color: black;
+    padding: 10px;
+    position: relative;
+}
+
+#infoText p {
+    margin: 0;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+
+#infoContainer:hover {
+    right: 0;
+}
